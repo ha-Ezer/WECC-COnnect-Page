@@ -275,13 +275,13 @@
     .hero-section {
       text-align: center;
       padding: var(--spacing-xl) 0;
-      margin-bottom: var(--spacing-2xl);
+      margin-bottom: var(--spacing-lg);
     }
     
     @media (min-width: 768px) {
       .hero-section {
         padding: var(--spacing-2xl) 0;
-        margin-bottom: var(--spacing-3xl);
+        margin-bottom: var(--spacing-xl);
       }
     }
     
@@ -326,12 +326,12 @@
        SERVICE TIMES SECTION
        ======================================== */
     .service-times {
-      margin-bottom: var(--spacing-2xl);
+      margin-bottom: var(--spacing-lg);
     }
     
     @media (min-width: 768px) {
       .service-times {
-        margin-bottom: var(--spacing-3xl);
+        margin-bottom: var(--spacing-xl);
       }
     }
     
@@ -398,12 +398,12 @@
        SOCIAL MEDIA LINKS SECTION
        ======================================== */
     .social-links {
-      margin-bottom: var(--spacing-2xl);
+      margin-bottom: var(--spacing-lg);
     }
     
     @media (min-width: 768px) {
       .social-links {
-        margin-bottom: var(--spacing-3xl);
+        margin-bottom: var(--spacing-xl);
       }
     }
     
@@ -631,13 +631,23 @@
        ======================================== */
     .contact-form-section {
       max-width: 600px;
-      margin: var(--spacing-xl) auto;
+      margin: var(--spacing-lg) auto;
       padding: 0 var(--spacing-md);
+      width: 100%;
+    }
+    
+    @media (max-width: 768px) {
+      .contact-form-section {
+        max-width: 100%;
+        padding: 0 var(--spacing-sm);
+        margin: var(--spacing-md) auto;
+      }
     }
     
     @media (min-width: 768px) {
       .contact-form-section {
         padding: 0 var(--spacing-lg);
+        margin: var(--spacing-xl) auto;
       }
     }
     
@@ -647,11 +657,13 @@
       border-radius: var(--radius-lg);
       padding: var(--spacing-xl);
       box-shadow: var(--shadow-card);
+      width: 100%;
     }
     
     @media (max-width: 768px) {
       .form-container {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
+        border-radius: var(--radius-md);
       }
     }
     
